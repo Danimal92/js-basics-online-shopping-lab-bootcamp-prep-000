@@ -10,7 +10,8 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+  cart = Object.assign({},cart,{[item] : (Math.floor(Math.random() * (100 - 1) ) + 1)});
+  return `${item} has been added to your cart.`
 }
 
 function viewCart() {
